@@ -1,0 +1,58 @@
+@import "ui-variables";
+
+.package-tracker-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, @component-active-color 40%, transparent);
+  border-left: 5px solid @component-active-color;
+  background: color-mix(in srgb, @component-active-color 8%, transparent);
+
+  .package-tracker-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+
+  .package-tracker-icon {
+    font-size: 1.4em;
+  }
+
+  .package-tracker-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .package-tracker-open {
+    font-weight: 600;
+    animation: package-tracker-pulse 1.2s ease-in-out 2;
+  }
+
+  .package-tracker-number {
+    font-family: monospace;
+    opacity: 0.75;
+  }
+
+  .package-tracker-copy {
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+}
+
+// Pulses twice when the message opens to draw the eye, then stays still.
+@keyframes package-tracker-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 0 0 0 5px color-mix(in srgb, @component-active-color 35%, transparent);
+  }
+}

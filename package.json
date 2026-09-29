@@ -1,0 +1,34 @@
+{
+  "name": "mailspring-package-tracker",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "Finds package tracking numbers in emails and shows one-click links to the carrier tracking page above the message.",
+  "license": "MIT",
+  "author": "kz6fittycent",
+  "homepage": "https://github.com/kz6fittycent/mailspring-package-tracker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kz6fittycent/mailspring-package-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kz6fittycent/mailspring-package-tracker/issues"
+  },
+  "keywords": [
+    "mailspring",
+    "mailspring-plugin",
+    "package-tracking"
+  ],
+  "engines": {
+    "mailspring": ">=1.6.3"
+  },
+  "windowTypes": {
+    "default": true,
+    "thread-popout": true
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "dependencies": {
+    "ts-tracking-number": "^1.0.17"
+  }
+}
