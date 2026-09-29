@@ -10,6 +10,19 @@ OnTrac, and S10 international postal numbers.
 
 ## Install
 
+### From a release (easiest)
+
+1. Download `mailspring-package-tracker-vX.Y.Z.zip` from the
+   [latest release](https://github.com/kz6fittycent/mailspring-package-tracker/releases/latest)
+   and unzip it.
+2. In Mailspring choose **Developer → Install a Plugin…** and select the
+   unzipped `mailspring-package-tracker` folder.
+
+The release zip already includes its dependencies, so there's nothing else to
+install.
+
+### From source
+
 ```sh
 git clone https://github.com/kz6fittycent/mailspring-package-tracker.git
 cd mailspring-package-tracker
